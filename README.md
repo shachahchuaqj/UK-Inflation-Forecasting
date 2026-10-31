@@ -32,9 +32,9 @@ These diagnostics inform the specification of candidate SARIMA models.
 
 The project considers models of the form:
 
-\[
+$
 \operatorname{SARIMA}(p,d,q)(P,D,Q)_{12}
-\]
+$
 
 where \(p,d,q\) describe the non-seasonal autoregressive, differencing and moving-average components, while \(P,D,Q\) describe their seasonal counterparts.
 
@@ -54,15 +54,15 @@ Forecast performance is measured using:
 
 **Root Mean Squared Error (RMSE)**
 
-\[
+$
 RMSE=\sqrt{\frac{1}{n}\sum_{t=1}^{n}(y_t-\hat y_t)^2}
-\]
+$
 
 **Mean Absolute Error (MAE)**
 
-\[
+$
 MAE=\frac{1}{n}\sum_{t=1}^{n}|y_t-\hat y_t|
-\]
+$
 
 Candidate performance is compared against two benchmarks:
 
@@ -90,9 +90,9 @@ These findings are retained as limitations of the model rather than disregarded 
 
 The final selected specification is:
 
-\[
+$
 \boxed{\operatorname{SARIMA}(1,1,1)(0,0,1)_{12}}
-\]
+$
 
 Although SARIMA(1,1,2)(0,0,1)₁₂ achieved a marginally lower validation RMSE, the simpler model was preferred because it delivered almost identical forecasting accuracy with fewer parameters and a lower training BIC.
 
