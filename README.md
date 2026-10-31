@@ -101,7 +101,7 @@ Although SARIMA(1,1,2)(0,0,1)₁₂ achieved a marginally lower validation RMSE,
 | Model | RMSE | MAE |
 |---|---:|---:|
 | SARIMA(1,1,1)(0,0,1)₁₂ | 0.3051 | 0.2262 |
-| naive | 0.5842 | 0.3708 |
+| Naive | 0.5842 | 0.3708 |
 | Seasonal naive | 4.4631 | 3.7375 |
 
 ### Final Test Results
@@ -111,7 +111,7 @@ After selecting the specification, the model was evaluated over the previously u
 | Model | RMSE | MAE |
 |---|---:|---:|
 | **SARIMA(1,1,1)(0,0,1)₁₂** | **0.2553** | **0.2074** |
-| naive | 0.2986 | 0.2583 |
+| Naive | 0.2986 | 0.2583 |
 | Seasonal naive | 0.7433 | 0.6583 |
 
 All forecast errors are measured in percentage points of year-on-year CPI inflation.
